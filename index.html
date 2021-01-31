@@ -85,10 +85,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1528412690691761');
 fbq('track', 'PageView');
-var clickBtnPv = function(){
-	fbq('track', 'Acessou_PV')
-}
-document.getElementsByClassName('elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow').onclick = clickBtnPv;
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1528412690691761&ev=PageView&noscript=1"
@@ -97,6 +93,13 @@ src="https://www.facebook.com/tr?id=1528412690691761&ev=PageView&noscript=1"
 
 <link rel="icon" href="../wp-content/uploads/2020/05/cropped-timilly-3-best-logo-32x32.png" sizes="32x32" />
 <meta name="msapplication-TileImage" content="../wp-content/uploads/2020/05/cropped-timilly-3-best-logo-270x270.png" />
+<script type="text/javascript">
+	var clickBtnPv = function()
+	{
+		fbq('track', 'Acessou_PV');
+	}
+	document.getElementById('botaoPv').onclick = clickBtnPv;
+</script>
 </head>
 
 <body data-rsssl=1 itemtype='https://schema.org/WebPage' itemscope='itemscope' class="page-template-default page page-id-3846 wp-custom-logo ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-2.4.3 ast-header-custom-item-inside ast-single-post ast-inherit-site-logo-transparent elementor-default elementor-kit-790 elementor-page elementor-page-3846">
@@ -233,7 +236,7 @@ src="https://www.facebook.com/tr?id=1528412690691761&ev=PageView&noscript=1"
 						<div class="elementor-element elementor-element-5a276f9 elementor-align-center elementor-widget elementor-widget-button" data-id="5a276f9" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="https://ctcursos.com/q3s" class="elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow" role="button">
+			<a href="https://ctcursos.com/q3s" id="botaoPv" class="elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="far fa-hand-point-right"></i>			</span>
@@ -461,7 +464,7 @@ src="https://www.facebook.com/tr?id=1528412690691761&ev=PageView&noscript=1"
 						<div class="elementor-element elementor-element-e1f7aa8 elementor-align-center elementor-widget elementor-widget-button" data-id="e1f7aa8" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="https://ctcursos.com/q3s" class="elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow" role="button">
+			<a href="https://ctcursos.com/q3s" id="botaoPv" class="elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="far fa-hand-point-right"></i>			</span>
@@ -620,7 +623,7 @@ src="https://www.facebook.com/tr?id=1528412690691761&ev=PageView&noscript=1"
 						<div class="elementor-element elementor-element-4e49cff elementor-align-center elementor-widget elementor-widget-button" data-id="4e49cff" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="https://ctcursos.com/q3s" class="elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow" role="button">
+			<a href="https://ctcursos.com/q3s" id="botaoPv" class="elementor-button-link elementor-button elementor-size-xl elementor-animation-pulse-grow" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="far fa-hand-point-right"></i>			</span>
