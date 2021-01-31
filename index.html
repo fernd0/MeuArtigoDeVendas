@@ -91,11 +91,13 @@ src="https://www.facebook.com/tr?id=1528412690691761&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 <script type="text/javascript">
+window.onload = function(){
 	var clickBtnPv = function()
 	{
 		fbq('track', 'Acessou_PV');
 	}
-	document.getElementById('botaoPv').onclick = clickBtnPv;
+	document.getElementById('botaoPv').onclick = clickBtnPv;   
+};
 </script>
 
 <link rel="icon" href="../wp-content/uploads/2020/05/cropped-timilly-3-best-logo-32x32.png" sizes="32x32" />
