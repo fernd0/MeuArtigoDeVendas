@@ -25,10 +25,19 @@ body {
     width: 100%;
 }
 
+#location {
+    color: #3EA0FF;
+    font-weight: 600;
+}
+
 /* Hero */
 
 .frame-video {
     max-width: 100%;
+}
+
+#button_chechout_hero, #button_chechout_final {
+    display: none;
 }
 
 .hero {
@@ -55,7 +64,7 @@ body {
 }
 
 .ultrasecreto {
-    margin: 20px;
+    margin:20px;
     max-width: 90%;
 }
  
@@ -292,6 +301,7 @@ footer {
     height: 360px;
 }
 
+
 /* RESPONSIVO */
 
 @media only screen and (max-width: 480px){
@@ -377,3 +387,4 @@ text-align-last: center;
     }
 
 }
+
