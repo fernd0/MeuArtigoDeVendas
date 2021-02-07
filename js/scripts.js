@@ -10,7 +10,7 @@ $(document).ready(function() {
     setTimeout(function() { 
         $('#button_chechout_hero').show(); 
         $('#button_chechout_final').show(); 
- }, 1470  * 1 * 1000); 
+ }, 1550); 
 });
 
  //1550
