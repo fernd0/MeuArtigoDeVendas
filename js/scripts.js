@@ -3,6 +3,6 @@
 //     $("#locationJS").html(data.geoplugin_city);
 // });
 
-$(document).ready(function(){setTimeout(function(){$("#button_chechout_hero").show();$("#button_chechout_final").show()},10)});
+$(document).ready(function(){setTimeout(function(){$("#button_chechout_hero").show();$("#button_chechout_final").show()},100)});
 
  //1550
