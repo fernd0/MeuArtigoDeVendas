@@ -298,7 +298,7 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
     
 <!------------------------------- THANK YOU BUTTON ----------------------------> 
     
-    <a href="video-secreto.html" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elButtonCorner3 elBTN_b_1_3 elButtonShadowN1 elButtonTxtColor2 elBTNone elButtonBlock elButtonFluid elBtnHP_40 elBtnVP_10"  data-show-button-ids="section-1852710000-119" data-hide-button-ids="section-1852710000" id="undefined-840-186-690-1200"> <span class="elButtonMain">EU CONCORDO - ME MOSTRE O VIDEO!</span> <span class="elButtonSub"></span> </a> 
+    <a onclick="modalFormulario.show()" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elButtonCorner3 elBTN_b_1_3 elButtonShadowN1 elButtonTxtColor2 elBTNone elButtonBlock elButtonFluid elBtnHP_40 elBtnVP_10"  data-show-button-ids="section-1852710000-119" data-hide-button-ids="section-1852710000" id="undefined-840-186-690-1200"> <span class="elButtonMain">EU CONCORDO - ME MOSTRE O VIDEO!</span> <span class="elButtonSub"></span> </a> 
     
 <!---------------------------------- BUTTON -----------------------------------> 
   </div>
@@ -308,6 +308,91 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
 </div>
 
 <!--------------------------- END THANKYOU CONTENT ---------------------------->
+
+<!-- Modal Formulario -->
+<div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-labelledby="modalFormulario"
+aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="color: #333;font-size: 1.2em;text-align: center;">
+        <div class="modal-formulario">
+            <div class="modal-body" style="padding: 40px;">
+                <h5 class="modal-title" id="modalFormulario" style="color:#333"> Ops, o conteúdo desse vídeo é
+                    sigiloso, por isso vários Homens estão tentando retirar essa página do ar.</h5>
+                <p style="font-size: 14px;"><br>
+                    Receba o vídeo completo agora pelo seu <b>WhatsApp</b>:
+                </p>
+                <p>
+                    <form accept-charset="UTF-8"
+                        action="https://api.painel.zapfacil.com/api/webhooks/8bf3c01a8a0b42d3aa5b33664cfbc240"
+                        target="pagina" method="POST">
+                        <div class="infusion-field">
+                            <input class="infusion-field-input" id="fname" name="fname" placeholder="Seu nome"
+                                type="text"
+                                style="width: 100%; padding: 8px; border-radius: 7px; border: solid 1px #dadada; margin: 10px 0px; background-color: #f9f9f9; text-align: center; color: #666;"
+                                required />
+                        </div>
+                        <div class="infusion-field">
+                            <input class="infusion-field-input mask-cel-ddd" maxlength="15" id="phone"
+                                name="phone" placeholder="DDD + WhatsApp" type="tel"
+                                style="width: 100%; padding: 8px; border-radius: 7px; border: solid 1px #dadada; margin: 10px 0px; background-color: #f9f9f9; text-align: center; color: #666;"
+                                required />
+                        </div>
+                        <div>
+                            <div>&nbsp;</div>
+                        </div>
+                        <div class="infusion-submit">
+                            <button class="btn-form" id="enviaWhats" type="submit"
+                                style="background-color: #fe047c; color: #fff;border-radius: 30px;padding: 10px 20px 10px 20px;text-transform: uppercase;font-weight: bold;font-size: 14px;letter-spacing: 2px;height: 60px;width: 500px;max-width: 100%;border: none;">Continuar</button>
+                        </div>
+                    </form>
+                    <iframe name="pagina" style="display: none"></iframe>
+                </p>
+            </div>
+        </div>
+        <div class="box-espera" style="display: none">
+            <div class="modal-body text-center" style="padding: 40px;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 text-center">
+                            <lottie-player src=""
+                                background="transparent" speed="1" style="height: 100px;" autoplay>
+                            </lottie-player>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center modal-enviando">
+                        <div class="col-md-12 text-center">
+                            <h1 style="color: #333;
+                        text-transform: inherit;
+                        font-size: 20px;
+                        font-weight: 800;
+                        margin-top: 30px;
+                        letter-spacing: 0px;">O vídeo está sendo enviado<br> em <span id="countdown"
+                                    style="font-weight: bold; color:  #fe047c">5</span> <span
+                                    id="segundos">segundos</span>.
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center modal-enviado" style="display: none">
+                        <div class="col-md-12 text-center">
+                            <h1 style="color: #333;
+                            text-transform: inherit;
+                            font-size: 20px;
+                            font-weight: 800;
+                            margin-top: 30px;
+                            letter-spacing: 0px;">O vídeo foi enviado no seu WhatsApp</span>.
+                            </h1>
+                            <p style="color: #666; font-size: 16px;">Verifique seu celular e assista o vídeo
+                                completo.
+                                <!--Caso não tenha recebido, <a id="form-novamente">preencha o formulário novamente</a>.-->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!------- TO CHANGE RIGHT SIDE CONTENT SECTION, EDIT BLACK TEXT BELOW --------->
