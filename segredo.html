@@ -586,9 +586,11 @@ aria-hidden="true" data-backdrop="static" data-keyboard="false">
 </div>
 
 <script>
-  document.getElementById('undefined-840-186-690-1200').addEventListener('click', function(){
-    document.getElementById("modalFormulario").style.display = "flex";
-  });
+  $(document).ready(function ($) {
+    document.getElementById("undefined-840-186-690-1200").addEventListener('click', function(){
+      $("modalFormulario").modal('show');
+    });
+  }
 </script>
 
 <!--------------------------END FOOTER SECTION -------------------------------->
