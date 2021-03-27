@@ -10,7 +10,6 @@
 <link rel='icon' type='image/png' href='img/fav.ico'>
 </link>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -588,9 +587,14 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
 
         
       <script>
-        function aparecerForm(){
-          $("#modalFormulario").modal('show');
-      }
+          $(document).ready(function($) {
+            $("#undefined-840-186-690-1200").on("click", "a", function(event) {
+              event.preventDefault();
+              jQuery.noConflict();
+              $('#modalFormulario').modal('show');
+
+            });
+          });
       </script>
 
 </body>
