@@ -594,7 +594,6 @@ crossorigin="anonymous"></script>
 
         <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script>
 
             $(document).ready(function () {
@@ -631,21 +630,6 @@ crossorigin="anonymous"></script>
                 });
             });
 
-        </script>
-
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script>
-            var iframe = document.querySelector('iframe');
-            var player = new Vimeo.Player(iframe);
-
-            player.on('timeupdate', function (data) {
-                if (data.seconds >= 5.000) {
-                    var iframe = $('.vimeo-iframe').get(0);
-                    var player = new Vimeo.Player(iframe);
-                    player.pause();
-                    $("#modalFormulario").modal('show');
-                }
-            });
         </script>
 
 </body>
