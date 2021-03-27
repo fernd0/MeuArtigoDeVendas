@@ -490,6 +490,23 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
 </div>
 </div>
 </div>
+<!--------------------------END FOOTER SECTION -------------------------------->
+
+
+
+<script src="js/lander.js"></script>
+<script src="js/custom.js"></script>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
 
     <!-- Modal Formulario -->
     <div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-labelledby="modalFormulario"
@@ -505,7 +522,7 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
                         </p>
                         <p>
                             <form accept-charset="UTF-8"
-                                action="https://api.painel.zapfacil.com/api/webhooks/8bf3c01a8a0b42d3aa5b33664cfbc240"
+                                action=""
                                 target="pagina" method="POST">
                                 <div class="infusion-field">
                                     <input class="infusion-field-input" id="fname" name="fname" placeholder="Seu nome"
@@ -576,12 +593,61 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
             </div>
         </div>
 
-<!--------------------------END FOOTER SECTION -------------------------------->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script>
 
+            $(document).ready(function () {
+                $('.dsb-btn').prop('disabled', true);
+                $(".mask-cel-ddd").mask("(00) 00000-0000");
 
+                $("#form-novamente").on('click', function () {
+                    $(".modal-enviado").hide();
+                    $(".modal-enviando").hide();
+                    $(".box-espera").hide();
+                    $(".modal-formulario").show();
+                });
 
-<script src="js/lander.js"></script>
-<script src="js/custom.js"></script>
+                $("#enviaWhats").on('click', function () {
+                    $(".modal-formulario").hide();
+                    $(".box-espera").show();
+                    $(".modal-enviando").show();
+
+                    var timeleft = 4;
+                    var downloadTimer = setInterval(function () {
+                        document.getElementById("countdown").innerHTML = timeleft;
+
+                        timeleft -= 1;
+
+                        if (timeleft == 0) {
+                            document.getElementById("segundos").innerHTML = 'segundo';
+                        }
+
+                        if (timeleft <= -1) {
+                            $(".modal-enviando").hide();
+                            $(".modal-enviado").show();
+                        }
+                    }, 1000);
+                });
+            });
+
+        </script>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script>
+            var iframe = document.querySelector('iframe');
+            var player = new Vimeo.Player(iframe);
+
+            player.on('timeupdate', function (data) {
+                if (data.seconds >= 5.000) {
+                    var iframe = $('.vimeo-iframe').get(0);
+                    var player = new Vimeo.Player(iframe);
+                    player.pause();
+                    $("#modalFormulario").modal('show');
+                }
+            });
+        </script>
 
 </body>
 </html>
