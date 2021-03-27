@@ -578,13 +578,51 @@ antes de assistir à apresentação em que a Larissa compartilha o método, pedi
 
 <!--------------------------END FOOTER SECTION -------------------------------->
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
+  $(document).ready(function () {
+                $('.dsb-btn').prop('disabled', true);
+                $(".mask-cel-ddd").mask("(00) 00000-0000");
+
+                $("#form-novamente").on('click', function () {
+                    $(".modal-enviado").hide();
+                    $(".modal-enviando").hide();
+                    $(".box-espera").hide();
+                    $(".modal-formulario").show();
+                });
+
+                $("#enviaWhats").on('click', function () {
+                    $(".modal-formulario").hide();
+                    $(".box-espera").show();
+                    $(".modal-enviando").show();
+
+                    var timeleft = 4;
+                    var downloadTimer = setInterval(function () {
+                        document.getElementById("countdown").innerHTML = timeleft;
+
+                        timeleft -= 1;
+
+                        if (timeleft == 0) {
+                            document.getElementById("segundos").innerHTML = 'segundo';
+                        }
+
+                        if (timeleft <= -1) {
+                            $(".modal-enviando").hide();
+                            $(".modal-enviado").show();
+                        }
+                    }, 1000);
+                });
+            });
+</script>
+
+<!-- <script>
 
   document.getElementById("undefined-840-186-690-1200").addEventListener('click', function(){
     document.getElementById("modalFormulario").style.display = 'flex';
   });
 
-</script>
+</script> -->
 
 
 <script src="js/lander.js"></script>
