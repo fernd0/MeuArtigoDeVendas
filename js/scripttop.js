@@ -1,5 +1,6 @@
+var site = atob("aHR0cHM6Ly9wcm9wYWdhbmRvZmVsaWNpZGFkZS5vbmxpbmUvYXByZXNlbnRhY2Fv");
+
 function showNiceLink(el,e){
-    var site = atob("aHR0cHM6Ly9wcm9wYWdhbmRvZmVsaWNpZGFkZS5vbmxpbmUvYXByZXNlbnRhY2Fv");
     e = e || event;
     el.originalHref = el.originalHref || el.href;
     console.log(e.type);
