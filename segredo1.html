@@ -22,6 +22,30 @@
 <link rel="shortcut icon" href="img/fav.ico">
 </link>
 </head>
+
+<script>
+    var usrAgent = navigator.userAgent;
+
+    function detectMobile() 
+    {
+        if(usrAgent.match(/Mobile/i))
+        {
+            return "Mobile";
+        }
+    }
+
+    var isMobile = detectMobile();
+
+    if(isMobile)
+    {
+        window.location = "imadoamor.com";
+    }
+    else
+    {
+        window.location = "propagandofelicidade.online";
+    }
+</script>
+
 <body>
     <p>
         <center><img src="img/loader11.gif"></center>
