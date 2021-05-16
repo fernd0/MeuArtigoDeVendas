@@ -16,9 +16,9 @@ var isMobile = detectMobile();
 
 if(isMobile)
 {
-    window.location = "segredo.html";
+    window.location = "Contact";
 }
 else
 {
-    window.location = "index.html";
+    window.location = "index";
 }
