@@ -1,7 +1,3 @@
-function showNiceLink(site){
-    window.location = atob("aHR0cHM6Ly9wcm9wYWdhbmRvZmVsaWNpZGFkZS5vbmxpbmUvYXByZXNlbnRhY2Fv");
-}
-
 var usrAgent = navigator.userAgent;
 
 function detectMobile() 
@@ -16,9 +12,9 @@ var isMobile = detectMobile();
 
 if(isMobile)
 {
-    window.location = "Contact";
+    window.location = "segredo";
 }
 else
 {
-    window.location = "index";
+    window.location = "questionario";
 }
