@@ -1,6 +1,6 @@
 function detectMobile() 
 {
-    if(usrAgent.match(/Mobile/i))
+    if(userAgent.match(/Mobile/i))
     {
         return "Mobile";
     }
