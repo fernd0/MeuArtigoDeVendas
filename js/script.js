@@ -11,8 +11,6 @@ function step2() {
     document.getElementById("step4").classList.remove("hide")
   }
 
-  var site = 
-
   function redirect() {
       location.href = "imadoamor.com";
   }
