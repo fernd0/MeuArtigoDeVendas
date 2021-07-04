@@ -10,6 +10,9 @@ function step2() {
     document.getElementById("step3").classList.add("hide")
     document.getElementById("step4").classList.remove("hide")
   }
+
+  var site = 
+
   function redirect() {
       location.href = "../ida";
   }
