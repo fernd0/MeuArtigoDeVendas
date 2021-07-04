@@ -14,5 +14,5 @@ function step2() {
   var site = 
 
   function redirect() {
-      location.href = "../ida";
+      location.href = "imadoamor.com";
   }
