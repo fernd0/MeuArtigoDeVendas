@@ -12,5 +12,5 @@ function step2() {
   }
 
   function redirect() {
-      location.href = "https://imadoamor.com/";
+      location.href = "/ida";
   }
