@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Propagando Felicidade</title>
+
+  <meta name="description" content="">
+  <meta name="keywords" content="Propagando Felicidade">
+  <meta Name=”robots” content=”noindex,nofollow”>
+  <meta itemprop="name" content="Propagando Felicidade">
+  <meta itemprop="description" content="">
+  <meta name="og:title" content="">
+  <meta name="og:description" content="">
+  <meta name="og:site_name" content="">
+  <meta name="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <style>
+  @font-face {
+    font-family: Gotham Rounded;
+    src: url("font.otf") format("opentype");
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("./img/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 700px;
+    max-width: 90%;
+  }
+  .black {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px rgba(56, 22, 129, 0.5);
+  }
+  .answer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  @media (max-width: 991px) {
+    body {
+        margin: 30px 0;
+        height: auto;
+    }
+    .answer {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+      gap: 10px;
+      width: 100%
+    }
+    .btn {
+      border-radius: 10px;
+      padding: 15px 0px;
+      font-size: 25px;
+      background-color: #f7ce6a;
+      outline: none;
+      text-decoration: none;
+      color: black;
+      width: 100%;
+    }
+  }
+  .btn {
+    border-radius: 10px;
+    padding: 15px 0px;
+    font-size: 20px;
+    background-color: #f7ce6a;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    min-width: 48%;
+    border: none;
+    border-bottom: 5px solid #CDAB58;
+  }
+  .yes {
+    border-radius: 10px;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: #6AC92F;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-bottom: 5px solid #408615;
+  }
+  .black h1 {
+    color: #000;
+  }
+  .black h4 {
+    color: #000;
+    background: #E6E6E6;
+    border-radius: 5px;
+    padding:15px 0;
+  }
+  .black p {
+    font-size: 18px;
+    color: #000;
+  }
+  .hide {
+    display: none;
+  }
+  .animation {
+      position: relative;
+      border: none;
+      border-bottom: 5px solid #408615;
+  }
+  .animation::before {
+      content: '\f053';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: bold;
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      animation: shake 1.6s infinite
+  }
+  .animation::after {
+      content: '\f054';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: bold;
+      position: absolute;
+      left: 20px;
+      top: 18px;
+      animation: shake 1.6s infinite
+  }
+  @-webkit-keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  @keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  </style>
+
+  <div class="container">
+    <div class="black">
+      <div class="question">
+        <h1 style="font-size: 1.7em;">“Ele me deixou do nada, assim que as coisas começaram a ficar um pouco mais profundas...&#128532;" </h1>
+        <p>Eu ouço histórias trágicas como esta das minhas clientes com tanta frequência que parece um disco quebrado...</p>
+        <p style="background-color: rgb(198, 253, 253, 0.5);">Elas investiram tempo, energia e todo o seu CORAÇÃO em um relacionamento que parecia estar indo tão bem (ela se sentia como "A Única")...</p>
+        <p>Apenas para terminar desapontada, solitária e extremamente confusa novamente...</p>
+        <p style="background-color: rgba(173, 52, 163, 0.2);">&#128148; "Talvez, talvez ele também goste de mim e tenha algum... ALGUM... motivo sério para não responder?"</p>
+        <p style="background-color: rgba(173, 52, 163, 0.2);">&#128148; “Ele encontrou outra pessoa? Alguém melhor do que eu?”</p>
+        <p style="background-color: rgba(173, 52, 163, 0.2);">&#128148; “Devo esperar para ver se ele entrará em contato comigo?<br>Devo enviar uma mensagem para ELE?”</p>
+        <p style="background-color: rgba(173, 52, 163, 0.2);">&#128148; “Isso realmente acabou?”</p>
+        <p style="background-color: rgba(69, 196, 97, 0.226);">A verdade é que 90% das mulheres que perdem o interesse de um homem "do dia para noite" estão cometendo um "erro de intimidade" muito bobo, mas incrivelmente destrutivo, que está mexendo com o "instinto primitivo" de seu parceiro...</p>
+        <p>Forçando ele a se fechar inconscientemente e se afastar (fisicamente E emocionalmente).</p>
+        <br>
+        <p>Responda essas 4 simples perguntinhas para ter acesso ao vídeo&#128071;</p>
+      </div>
+      <div id="step1">
+        <div class="question">
+          <h1>Perg<!--.-->unta 1</h1>
+          <p>Está cansada de não saber o que fazer?</p>
+          <h4>Selecione sua resposta abaixo</h4>
+        </div>
+        <div class="answer">
+          <button class="btn yes" onclick="step2()">S<!--.-->IM</button>
+          <button class="btn" onclick="step2()">N<!--.-->ÃO</button>
+        </div>
+      </div>
+      <div id="step2" class="hide">
+        <div class="question">
+          <h1>Pergu<!--.-->nta 2</h1>
+          <p>Deseja dar um BASTA em tudo isso, ainda hoje?</p>
+          <h4>Selecione sua resposta abaixo</h4>
+        </div>
+        <div class="answer">
+          <button class="btn yes" onclick="step3()">S<!--.-->IM</button>
+          <button class="btn" onclick="step3()">N<!--.-->ÃO</button>
+        </div>
+      </div>
+      <div id="step3" class="hide">
+        <div class="question">
+          <h1>Per<!--.-->gunta 3</h1>
+          <p>Você realmente quer descobrir esse segredo nunca antes revelado?</p>
+          <h4>Selecione sua resposta abaixo</h4>
+        </div>
+        <div class="answer">
+          <button class="btn yes" onclick="step4()">S<!--.-->IM</button>
+          <button class="btn" onclick="step4()">N<!--.-->ÃO</button>
+        </div>
+      </div>
+      <div id="step4" class="hide">
+        <div class="question">
+          <h1>Pergu<!--.-->nta 4</h1>
+          <p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
+          <h4>Selecione sua resposta abaixo</h4>
+        </div>
+        <div class="answer">
+          <button class="btn yes animation" onclick="redirect()">ACE<!--.-->SSAR AGORA</button>
+          <button class="btn" onclick="redirect()">N<!--.-->ÃO</button>
+        </div>
+      </div>  
+    </div>
+
+    <p style="text-align: center; font-weight: bold;color:rgba(218, 218, 218, 0.7);font-size:0.8em; margin-top:30px">© 2021 – All rights reserved. This website is not part of or endorsed by Facebook. Facebook is a trademark of Facebook, Inc.<br><br>
+
+    Advertising Disclosure: This site is an advertisement and not a news publication or consumer protection document. Any photos or video content always or embedded on this page are actors and models. The website owner simply offers a service in which consumers can obtain more information about the products found and advertised on it and does not offer official medical information or advice.</p>
+    <p style="text-align: center; font-weight: bold;color: rgba(218, 218, 218, 0.7);"><a href="termos-de-uso.html" style="color: rgba(218, 218, 218, 0.7);">Termos de Uso</a> | <a href="politica-de-privacidade.html" style="color: rgba(218, 218, 218, 0.7);">Política de Privacidade</a></p>
+  </div>
+</body>
+</html>
