@@ -16,7 +16,7 @@
   <meta name="og:site_name" content="">
   <meta name="og:type" content="website">
   <meta name="theme-color" content="#ffffff">
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/countdown.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <style>
   @font-face {
@@ -185,7 +185,34 @@
       transform: translate3d(10px, 0, 0);
     }
   }
+
+  /* Navbar */
+
+#navbar {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+}
+
   </style>
+
+  
+
+<section id="navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p style="color: #fff;" id="countdown"></p>
+            </div>
+        </div>
+    </div>
+</section>
 
   <div class="container">
     <div class="black">
