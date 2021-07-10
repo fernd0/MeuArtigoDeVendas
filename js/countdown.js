@@ -33,11 +33,11 @@ function timer() {
 
     if (ss == 59) { //Verifica se deu 59 segundos
         ss = 0; //Volta os segundos para 0
-        mm++; //Adiciona +1 na variável mm
+        mm-- //Adiciona +1 na variável mm
 
         if (mm == 59) { //Verifica se deu 59 minutos
             mm = 0;//Volta os minutos para 0
-            hh++;//Adiciona +1 na variável hora
+            hh--;//Adiciona +1 na variável hora
         }
     }
 
