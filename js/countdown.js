@@ -50,3 +50,4 @@ function timer() {
     //Retorna o valor tratado
     return format;
 }
+start();
