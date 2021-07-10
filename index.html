@@ -273,6 +273,62 @@ $(document).ready(function($) {
 
 });
 </script>
+<!-- <script type="text/javascript">
+  (function(b) {
+      var a = {
+          version: "0.0.1",
+          history_api: typeof history.pushState !== "undefined",
+          init: function() {
+              b.location.hash = "#no-back";
+              a.configure();
+          },
+          //verifica se houve click to back e redireciona
+          hasChanged: function() {
+              if (b.location.hash == "#no-back") {
+                  b.location.hash = "#";
+                  b.location.href = "/grande-oportunidade"; //aqui vai o link para redirecionar 
+              }
+          },
+           //verifica se é possivel to back
+          checkCompat: function() {
+              if (b.addEventListener) {
+                  b.addEventListener("hashchange", a.hasChanged, false);
+              } else {
+                  if (b.attachEvent) {
+                      b.attachEvent("onhashchange", a.hasChanged);
+                  } else {
+                      b.onhashchange = a.hasChanged;
+                  }
+              }
+          },
+            //setaq o retorno e redireciona
+          configure: function() {
+              if (b.location.hash == "#no-back") {
+                  if (this.history_api) {
+                      history.pushState(null, "", "#");
+                  } else {
+                      b.location.hash = "#";
+                      b.location.href = "/grande-oportunidade"; //aqui vai o link para redirecionar 
+                  }
+              }
+              a.checkCompat();//função de possibilidade de retorno
+              a.hasChanged();  //função de verificação
+          }
+      };
+      if (typeof define === "function" && define.amd) {
+          define(function() {
+              return a;
+          });
+      } else {
+          if (typeof module === "object" && module.exports) {
+              module.exports = a;
+          } else {
+              b.noback = a;
+          }
+      }
+      a.init();//da start a função chamada de "a" que monitora os eventos de go back
+  }(window));      
+</script> -->
 <div class="container">
     <div class="row">
         <div id="footer" class="centerDiv">
