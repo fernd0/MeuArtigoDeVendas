@@ -29,7 +29,7 @@ function stop() {
 
 //Faz a contagem do tempo e exibição
 function timer() {
-    ss++; //Incrementa +1 na variável ss
+    ss--; //Incrementa +1 na variável ss
 
     if (ss == 59) { //Verifica se deu 59 segundos
         ss = 0; //Volta os segundos para 0
