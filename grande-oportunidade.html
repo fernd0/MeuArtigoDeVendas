@@ -1,155 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Propagando Felicidade</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Propagando Felicidade</title>
 
-  <meta name="description" content="">
-  <meta name="keywords" content="Propagando Felicidade">
-  <meta Name=”robots” content=”noindex,nofollow”>
-  <meta itemprop="name" content="Propagando Felicidade">
-  <meta itemprop="description" content="">
-  <meta name="og:title" content="">
-  <meta name="og:description" content="">
-  <meta name="og:site_name" content="">
-  <meta name="og:type" content="website">
-  <meta name="theme-color" content="#ffffff">
-  <script type="text/javascript" src="js/countdown.js" defer></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <style>
-  @font-face {
-    font-family: Gotham Rounded;
-    src: url("font.otf") format("opentype");
-  }
- 
-  body {
-    padding: 0;
-    margin: 0;
-    background: url("./img/fundo.png");
-    background-size: cover;
-    background-repeat: repeat;
-    font-family: Gotham Rounded;
-  }
-  .container {
-    width: 700px;
-    max-width: 100%;
-  }
-  .black {
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 2px rgba(56, 22, 129, 0.5);
-  }
+    <meta name="description" content="">
+    <meta name="keywords" content="Propagando Felicidade">
+    <meta Name=”robots” content=”noindex,nofollow”>
+    <meta itemprop="name" content="Propagando Felicidade">
+    <meta itemprop="description" content="">
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="og:site_name" content="">
+    <meta name="og:type" content="website">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="js/countdown.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: Gotham Rounded;
+            src: url("font.otf") format("opentype");
+        }
 
-  .btn {
-    border-radius: 10px;
-    padding: 15px 0px;
-    font-size: 20px;
-    background-color: #f7ce6a;
-    outline: none;
-    text-decoration: none;
-    color: black;
-    min-width: 48%;
-    border: none;
-    border-bottom: 5px solid #CDAB58;
-  }
-  .yes {
-    border-radius: 10px;
-    padding: 15px 0;
-    font-size: 20px;
-    background-color: #6AC92F;
-    outline: none;
-    text-decoration: none;
-    color: black;
-    border: none;
-    border-bottom: 5px solid #408615;
-  }
-  .black h1 {
-    color: #000;
-  }
-  .black h4 {
-    color: #000;
-    background: #E6E6E6;
-    border-radius: 5px;
-    padding:15px 0;
-  }
-  .black p {
-    font-size: 18px;
-    color: #000;
-  }
+        body {
+            padding: 0;
+            margin: 0;
+            background: url("./img/fundo.png");
+            background-size: cover;
+            background-repeat: repeat;
+            font-family: Gotham Rounded;
+        }
 
-#navbar {
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    font-size: 16px;
-    padding: 10px;
-    position: fixed;
-    z-index: 99999;
-    width: 100%;
-}
+        .container {
+            width: 700px;
+            max-width: 100%;
+        }
 
-ul {
-	position: relative;
-	list-style: none;
-	margin-left: 0;
-	padding-left: 1.2em;
-}
-ul li:before {
-	content: "*";
-	position: absolute;
-	left: 0;
-}
+        .black {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 2px rgba(56, 22, 129, 0.5);
+        }
 
-  </style>
+        .btn {
+            border-radius: 10px;
+            padding: 15px 0px;
+            font-size: 20px;
+            background-color: #f7ce6a;
+            outline: none;
+            text-decoration: none;
+            color: black;
+            min-width: 48%;
+            border: none;
+            border-bottom: 5px solid #CDAB58;
+        }
 
-  
+        .yes {
+            border-radius: 10px;
+            padding: 15px 0;
+            font-size: 20px;
+            background-color: #6AC92F;
+            outline: none;
+            text-decoration: none;
+            color: black;
+            border: none;
+            border-bottom: 5px solid #408615;
+        }
 
-<section id="navbar">
-    <div class="container2">
-        <div class="row">
-            <div class="col text-center" style="text-align: center;font-size: 0.85em;">
-                Essa promoção individual exclusiva <br>acababa em: <span id="countdown"></span>
+        .black h1 {
+            color: #000;
+        }
+
+        .black h4 {
+            color: #000;
+            background: #E6E6E6;
+            border-radius: 5px;
+            padding: 15px 0;
+        }
+
+        .black p {
+            font-size: 18px;
+            color: #000;
+        }
+
+        #navbar {
+            text-align: center;
+            color: #fff;
+            background-color: #000;
+            font-size: 16px;
+            padding: 10px;
+            position: fixed;
+            z-index: 99999;
+            width: 100%;
+        }
+
+        ul {
+            position: relative;
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1.2em;
+        }
+
+        ul li:before {
+            content: "*";
+            position: absolute;
+            left: 0;
+        }
+    </style>
+
+
+
+    <section id="navbar">
+        <div class="container2">
+            <div class="row">
+                <div class="col text-center" style="text-align: center;font-size: 0.85em;">
+                    Essa promoção individual exclusiva <br>acababa em: <span id="countdown"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"
+        style="position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
+        <div class="black" style="position: absolute">
+            <div class="question">
+                <h1 style="font-size: 1.7em;">Gostaria de ganhar <ins style="color: red;">67% de desconto</ins> em nosso
+                    programa Ímã Do Amor? Veja como…</h1>
+                <p>Você provavelmente só irá ver essa página uma <ins><strong>ÚNICA VEZ</strong></ins> (para sempre)…
+                </p>
+                <p>Isso porque você foi <strong>SELECIONADA</strong> para uma oportunidade única e exclusiva para novas
+                    participantes do “<em>Ímã Do Amor</em>”!</p>
+                <p><strong>A cada 100 pessoas acessando a nossa página ao mesmo tempo, sorteamos UMA delas para esse
+                        desconto exclusivo…</strong></p>
+                <p>Então aproveite esse desconto incrível que não se repetirá novamente e que aproxima você de
+                    (re)conquistar ele em até 2 meses.</p>
+                <br>
+                <p>(Essa janela de oportunidade será bloqueada assim que o cronômetro ZERAR).</p>
+                <br>
+                <p>Esse desconto está valendo somente agora, nesse exato momento!</p>
+                <p>De <del style="color: red">R$297</del> ficando por apenas R$97 à vista ou 10 parcelas de
+                    <strong>R$11,08*.</strong></p>
+                <p>Com <strong>67% de DESCONTO</strong> (R$200,00 off) em sua compra do no nosso programa “<em>Ímã Do
+                        Amor</em>” para ter o poder de escolher quem <strong>VOCÊ QUISER</strong>, e ficar por quano
+                    tempo <strong>VOCÊ QUISER!!!</strong></p>
+                <p>E para receber esse desconto incrível clique no <strong>botão verde</strong> abaixo desta página e
+                    realize o pagamento com 67% de desconto!</p>
+                <br>
+                <h1 style="font-size: 1.7em;"><span style="color: #FFA500;">Já imaginou</span> o que isso pode
+                    significar para você?</h1>
+                <ul>
+                    <li>Não ter que dar <strong>"tempo ao tempo"</strong> e agir corretamente de uma vez por todas...
+                    </li>
+                    <li>Parar de <strong>fingir que está tudo bem...</strong></li>
+                    <li>Voltar como tudo era antes...</li>
+                    <li><strong>DEIXAR PARA TRÁS</strong> toda a dor, armagura e raiva que sente dos homens que te
+                        desapontaram no passado...</li>
+                    <li style="font-weight: bold;">E O MAIS IMPORTANTE!</li>
+                    <li>Tudo isso sem que ele desconfie de alguma coisa, e o mais rápido possivel (para que as chances
+                        de ele conhecer alguem antes diminua...)</li>
+                </ul>
+                <h1 style="font-size: 1.7em;">É por esse motivo que o <span style="color: red;">Ímã Do Amor</span>
+                    entrega o passo a passo completo e garantido que leva você do ponto A ao ponto B…</h1>
+                <ul>
+                    <li><strong>Segredo Da Vida Emocional Dos Homens:</strong> Porque os homens ficam tão <span style="color: red;">aterrorizados</span>
+                        em dizer a verdade sobre aquilo que sentem... E como fazer com que ele abra seu coração e seja
+                        completamente <span style="color: red;">vulnerável</span> com você...</li>
+                </ul>
             </div>
         </div>
     </div>
-</section>
 
-  <div class="container" style="position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
-    <div class="black" style="position: absolute">
-      <div class="question">
-        <h1 style="font-size: 1.7em;">Gostaria de ganhar <ins style="color: red;">67% de desconto</ins> em nosso programa Ímã Do Amor? Veja como…</h1>
-        <p>Você provavelmente só irá ver essa página uma <ins><strong>ÚNICA VEZ</strong></ins> (para sempre)… </p>
-        <p>Isso porque você foi <strong>SELECIONADA</strong> para uma oportunidade única e exclusiva para novas participantes do “<em>Ímã Do Amor</em>”!</p>
-        <p><strong>A cada 100 pessoas acessando a nossa página ao mesmo tempo, sorteamos UMA delas para esse desconto exclusivo…</strong></p>
-        <p>Então aproveite esse desconto incrível que não se repetirá novamente e que aproxima você de (re)conquistar ele em até 2 meses.</p>
-        <br>
-        <p>(Essa janela de oportunidade será bloqueada assim que o cronômetro ZERAR).</p>
-        <br>
-        <p>Esse desconto está valendo somente agora, nesse exato momento!</p>
-        <p>De <del style="color: red">R$297</del> ficando por apenas R$97 à vista ou 10 parcelas de <strong>R$11,08*.</strong></p>
-        <p>Com <strong>67% de DESCONTO</strong> (R$200,00 off) em sua compra do no nosso programa “<em>Ímã Do Amor</em>” para ter o poder de escolher quem <strong>VOCÊ QUISER</strong>, e ficar por quano tempo <strong>VOCÊ QUISER!!!</strong></p>
-        <p>E para receber esse desconto incrível clique no <strong>botão verde</strong> abaixo desta página e realize o pagamento com 67% de desconto!</p>
-        <br>
-        <h1 style="font-size: 1.7em;"><span style="color: #FFA500;">Já imaginou</span> o que isso pode significar para você?</h1>
-        <ul>
-            <li>Não ter que dar <strong>"tempo ao tempo"</strong> e agir corretamente de uma vez por todas...</li>
-            <li>Parar de <strong>fingir que está tudo bem...</strong></li>
-            <li>Voltar como tudo era antes...</li>
-            <li>Ter ele de volta...</li>
-            <li style="font-weight: bold;">E O MAIS IMPORTANTE!</li>
-            <li>Tudo isso sem que ele desconfie de alguma coisa, e o mais rápido possivel (para que as chances de ele conhecer alguem antes diminua...)</li>
-        </ul>
-        <h1 style="font-size: 1.7em;">É por esse motivo que o <span style="color: red;">Ímã Do Amor</span> entrega o passo a passo completo e garantido que leva você do ponto A ao ponto B…</h1>
-        <ul>
-            <li></li>
-        </ul>
-    </div>
-      </div>  
-    </div>
+    </body>
 
-</body>
 </html>
